@@ -1,0 +1,22 @@
+
+class Fact{
+	static int fact(int num){
+		if(num==0){
+			return 1;
+		}
+		else
+			return num*fact(num-1);
+	}
+	
+}
+
+class factorial{
+	public static void main(String arg[]){
+		int a = Integer.valueOf(arg[0]);
+		
+		int res = Fact.fact(a);
+		System.out.println(a+"! = "+res);
+		
+
+	}
+}
